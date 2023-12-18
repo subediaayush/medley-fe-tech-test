@@ -19,6 +19,7 @@ export const ValueItem = styled(TableItem)`
 export const StatusChip = styled.span<{ status: string}>`
     background-color: ${props => {
         switch(props.status) {
+            case 'Completed':
             case 'Paid':
                 return '#60ca57'
             case 'Pending': 
