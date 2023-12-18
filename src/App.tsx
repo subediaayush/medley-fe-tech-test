@@ -1,24 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { SubTitle, Title } from './components/styled/typeface';
+import { Padding, Row } from './components/styled/layout';
+import { Plain } from './components/styled/badges';
+import { Table } from './components/data/Table';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Title>
+        Title
+      </Title>
+      <Padding $left="1rem" $right="1rem">
+        <SubTitle>
+          <Row gap="0.5em">
+            <Plain $color="#999dff" />
+            Payout History
+          </Row>
+        </SubTitle>
+      </Padding>
     </div>
   );
 }
